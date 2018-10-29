@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Identity by HTML5 UP</title>
+		<title>Wholesome</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
@@ -81,7 +81,14 @@
 				var listos = [
 					"I can't imagine you working alongside college stuff. Props, honestly. You inspire me.", 
 					"You're one of the most talented bb coders I know. Keep at it bb god." , 
-					"Sometimes I wake up and I'm sad. Not everyone gets to have an amazing girlfriend like you. A+ looks and personality. Definitely a keeper."
+					"Sometimes I wake up and I'm sad. Not everyone gets to have an amazing girlfriend like you. A+ looks and personality. Definitely a keeper.",
+					"I was a pretty shitty person when I first met you. I'm still honestly a shitty person now. You are truly the greatest human being I know, and I don't deserve you.",
+					"You've grown so much these past years that I can hardly recognize you. The wing it all girl from high school to the do it all girl in college. If life was Fire Emblem, you definitely have the best growth rates ;)",
+					"You've been working since your third quarter of college and I know peoplt that struggle to get an internship in junior year of college. Get rekt bois.",
+					"You turned your social situation around and now I feel like you're really happy at college. I never knew Ms. Scribe was that popular, but hey, at least people are finally recognizing how awesome you are (along with the challari, of course).",
+					"I don't say it enough, but I'm honestly so proud of you. Beyonce called, she asked whether I put on a ring on it yet...?",
+					"You demand the best out of people and aren't scared of the backlash. I really respect that. Better to have a tight group of homies and a bunch of fakos de snekos.",
+					"Being apart from you is tough, but never have I ever been so inspired to reach the top. Having a high achieving girl makes me want to kick ass too. Power couple af."
 				]
 				var index = Math.floor(Math.random() * 3);
 				document.getElementById("texto").innerHTML = listos[index];
@@ -91,10 +98,10 @@
 				}
 
 				function again() {
-					var index2 = Math.floor(Math.random() * 3);
+					var index2 = Math.floor(Math.random() * 10);
 					console.log(index2);
 					while (index2 == index) {
-						index2 = Math.floor(Math.random() * 3);
+						index2 = Math.floor(Math.random() * 10);
 						console.log(index2);
 					}
 					index = index2;

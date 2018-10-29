@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Identity by HTML5 UP</title>
+		<title>Sayd</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
@@ -83,7 +83,14 @@
 				var listos = [
 					"Not everything goes your way. Coming from the control freak perfectionist who rants about every exam, you know I mean it. Don't let up.", 
 					"I'm proud of you. I say it a lot, but it's really important. Lil cuties gonna look at you like a role model." , 
-					"Ouch. You know, for every L you've taken, I've taken 5 more. Social, academic, physical, you name it. Sad, I know."
+					"Ouch. You know, for every L you've taken, I've taken 5 more. Social, academic, physical, you name it. Sad, I know.",
+					"Family troubles be like that dude. Believe in your sister to eventually appreciate you, and believe in your bb dad to kick ass at his startup. Only the weak lose hope.",
+					"Every goodbye hurts, no matter how often it occurs. Yes, you're not the only one. But it makes us appreciate each other even more.",
+					"Sometimes it hurts not to get attention. I'm amazing, so I can't really empathize, but it's easy to forget that other people don't determine your worth. You do.",
+					"Exams and interviews can be so stressful! But there's no such thing as wasted effort. Honing your work ethic and recognizing your true stengths is a lifelong challenge, so don't sweat the smaller failures.",
+					"Perspective, my dude. What would the you from 5 years ago think about where you are right now? The fact is that you've accomplished so much and come so far. The trick is to aim for a position that you would be proud to be in within the next 5 years. Growth is all that matters",
+					"You're pretty weird. If other people pass on you for that though, they're just dumb. Or maybe they just don't like cute bbs. Or both.",
+					"Owning your emotion is fine. But remember that sadness is all a byproduct of the mind. It's a clash of your ideals versus your reality. So rather than simply crying, think to yourself how to build that bridge between those two."
 				]
 				var index = Math.floor(Math.random() * 3);
 				document.getElementById("texto").innerHTML = listos[index];
@@ -93,10 +100,10 @@
 				}
 
 				function again() {
-					var index2 = Math.floor(Math.random() * 3);
+					var index2 = Math.floor(Math.random() * 10);
 					console.log(index2);
 					while (index2 == index) {
-						index2 = Math.floor(Math.random() * 3);
+						index2 = Math.floor(Math.random() * 10);
 						console.log(index2);
 					}
 					index = index2;

@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Identity by HTML5 UP</title>
+		<title>Memories</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
@@ -83,7 +83,15 @@
 				var listos = [
 					"When you cried your heart out at your prom ask. Man you're so gullible. I still love you for it.", 
 					"The entire day we were at Santana Row for our anniversary. Window shopping isn't normally my thing, unless I have a hot date to go with it." , 
-					"Our first kiss. Two sloppy teenagers finally expressing their love after months. Still the best birthday gift. Ever. "
+					"Our first kiss. Two sloppy teenagers finally expressing their love after months. Still the best birthday gift. Ever. ",
+					"That one time we went too far at Chaboya. Big yikes. That's a story lil cuties should never find about.",
+					"When we went to Orlando Studios on a hot day and came out of the Harry Potter ride exhausted. But somehow we turned it around and had a lot of fun for the rest of the day. Or maybe I just always enjoy being around you.",
+					"That time when I asked Rahul for AP CS code and I got my own code back. Then at first you tried to deny any involvement...LOL",
+					"That time we got Thai Elephant and went to your house to watch Law and Order. Well 'those times' to be exact. Somehow I always enjoy myself no matter how repetitive the things we do are.",
+					"When I watched Gossip Girl and ate some goat Krispy Kreme donuts at your place in SB. Even though I missed my first bus, I'm glad I got one more night with you.",
+					"You came to my house to congratulate me over UCLA acceptance and you were more excited than I was. That's how I knew you were a keeper.",
+					"TBT to the tattoo days. The first bb pic ever was you sending me a pic of tattoo on your tongue :)"
+
 				]
 				var index = Math.floor(Math.random() * 3);
 				document.getElementById("texto").innerHTML = listos[index];
@@ -93,10 +101,10 @@
 				}
 
 				function again() {
-					var index2 = Math.floor(Math.random() * 3);
+					var index2 = Math.floor(Math.random() * 10);
 					console.log(index2);
 					while (index2 == index) {
-						index2 = Math.floor(Math.random() * 3);
+						index2 = Math.floor(Math.random() * 10);
 						console.log(index2);
 					}
 					index = index2;

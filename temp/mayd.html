@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Identity by HTML5 UP</title>
+		<title>Mayd</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
@@ -83,7 +83,14 @@
 				var listos = [
 					"I have a massive ego. I'm sorry. I'm not used to having any issues with the best girlfriend in the whole world.", 
 					"Again? I'm lazy, and that sometimes gets in the way of my communication skills. It's not an excuse, and I should know better by now." , 
-					"I know I'm stubborn. It's just that I need to be able to visualize things before I do them. That's why I asked you out. I knew you were the one."
+					"I know I'm stubborn. It's just that I need to be able to visualize things before I do them. That's why I asked you out. I knew you were the one.",
+					"Sometimes I just suck at getting excited at stuff, and instead just respond with my honest opinion. I'm sorry if that's not what you want. It's just that I have extremely high expectations of you, so your achievements are to be expected.",
+					"Sorry if I keep bringing up lil cuties and d marriage. I can't help but get excited when I imagine my future with you.",
+					"I know I ask for bb pics a LOT, but you are the most beautiful girl I know so...",
+					"Sorry for pinching ur cheeks too hard. You're the cutest cutie bb in the whole wide world!",
+					"There's nothing wrong with getting angry over stuff that contradicts what you believe in. That's what idealism is all about.",
+					"So what if that guy looked down on you? Every piece of trash has its own story, but honestly, who cares?",
+					"Sorry not sorry if you're mad about the comments I make about your shorts. I spit hot fire so that you look fire ;)."
 				]
 				var index = Math.floor(Math.random() * 3);
 				document.getElementById("texto").innerHTML = listos[index];
@@ -93,10 +100,10 @@
 				}
 
 				function again() {
-					var index2 = Math.floor(Math.random() * 3);
+					var index2 = Math.floor(Math.random() * 10);
 					console.log(index2);
 					while (index2 == index) {
-						index2 = Math.floor(Math.random() * 3);
+						index2 = Math.floor(Math.random() * 10);
 						console.log(index2);
 					}
 					index = index2;

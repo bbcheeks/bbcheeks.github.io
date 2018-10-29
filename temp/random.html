@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<!--
+	Identity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Random</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets2/css/main.css" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <noscript>
+        <link rel="stylesheet" href="assets2/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-loading">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <section id="main">
+            <header>
+                <p id="texto">Senior Psychonautics Engineer</p>
+            </header>
+            <!--
+						<hr />
+						<h2>Extra Stuff!</h2>
+						<form method="post" action="#">
+							<div class="field">
+								<input type="text" name="name" id="name" placeholder="Name" />
+							</div>
+							<div class="field">
+								<input type="email" name="email" id="email" placeholder="Email" />
+							</div>
+							<div class="field">
+								<div class="select-wrapper">
+									<select name="department" id="department">
+										<option value="">Department</option>
+										<option value="sales">Sales</option>
+										<option value="tech">Tech Support</option>
+										<option value="null">/dev/null</option>
+									</select>
+								</div>
+							</div>
+							<div class="field">
+								<textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
+							</div>
+							<div class="field">
+								<input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>
+							</div>
+							<div class="field">
+								<label>But are you a robot?</label>
+								<input type="radio" id="robot_yes" name="robot" /><label for="robot_yes">Yes</label>
+								<input type="radio" id="robot_no" name="robot" /><label for="robot_no">No</label>
+							</div>
+							<ul class="actions">
+								<li><a href="#" class="button">Get Started</a></li>
+							</ul>
+						</form>
+						<hr />
+						-->
+            <footer>
+                <button id="again" onclick="again()">Another one?</button>
+                <button id="back" onclick="back()">Back?</button>
+            </footer>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+    <script>
+        var listos = [
+           "Don't give me any girl lil cuties. If we get one, I'm definitely spoiling her. Then she's gonna grow up, give us attitude, and basically turn into our bb sises. ", 
+           "Give me a Chow Chow that'll sleep as much as I do. Actually, you nap a lot too, so you're invited to sleep with us.",
+           "Sometimes I fall asleep on your chest and I feel like the happiest man in the whole world.",
+           "Tbh sometimes I zone out of our conversations because I get distracted by your pretty face. Sorry!",
+           "I'm always right! That's why I'm keeping you forever, because you're 100% my soulmate.",
+           "You're so fake! So does that make me an idiot if I still love you?",
+           "One of my personal catchphrases is 'the only one who can beat me is me'. I use it to psych myself up in stressful situations. But when it comes to cheeks, you definitely have me beat. Massive bb cheeks dude.", 
+           "Cheek scratches and back scratches are so amazing that I wonder how single cope with life without them.",
+           "Unpopular opinion but I miss both secret spots. The added risk always turned me on more. The best part was littering with cum tissues :))))",
+           "Ahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh love u most"
+        ]
+        var index = Math.floor(Math.random() * 3);
+        document.getElementById("texto").innerHTML = listos[index];
+        if ('addEventListener' in window) {
+            window.addEventListener('load', function () { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+            document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+        }
+
+        function again() {
+            var index2 = Math.floor(Math.random() * 10);
+            console.log(index2);
+            while (index2 == index) {
+                index2 = Math.floor(Math.random() * 10);
+                console.log(index2);
+            }
+            index = index2;
+            document.getElementById("texto").innerHTML = listos[index];
+        }
+
+        function back() {
+            window.location.replace("index.html");
+        }
+    </script>
+
+</body>
+
+</html>
